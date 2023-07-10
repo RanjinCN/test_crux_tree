@@ -9,10 +9,12 @@
 	export LC_ALL="C"
 	export ALLOW_MISSING_DEPENDENCIES=true
 
+    export OF_SCREEN_H=2340
+
     echo -e "\x1b[96mcrux: Start adding OrangeFox Vars ...\x1b[m"
 
     export OF_MAINTAINER=HuaLiMao-AQ
-    export FOX_VERSION=$(date +%y.%m.%d)
+    export FOX_VERSION="$(date +%y.%m.%d)-11.0"
 
 	export FOX_REPLACE_TOOLBOX_GETPROP=1
 	export FOX_USE_TAR_BINARY=1
