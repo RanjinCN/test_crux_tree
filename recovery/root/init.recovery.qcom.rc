@@ -45,3 +45,9 @@ on boot
     start health-hal-2-1
     start qti.vibrator
     setprop sys.usb.config adb
+
+service keymaster-4-0 /system/bin/android.hardware.keymaster@4.0-service-qti
+    user root
+    group root drmrpc
+    disabled
+    seclabel u:r:recovery:s0
