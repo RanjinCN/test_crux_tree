@@ -41,6 +41,12 @@ service qti.vibrator /system/bin/vendor.qti.hardware.vibrator.service
     setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
     seclabel u:r:recovery:s0
 
+service vibrator-service /system/bin/vendor.qti.hardware.vibrator@1.2-service
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+
 on boot
     start health-hal-2-1
     start qti.vibrator
