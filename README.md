@@ -8,10 +8,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 ```
-Mi 9 Pro 5G Twrp Device Tree
+Mi 9 Pro 5G (crux)  Twrp Device Tree
+
 system正常解密可刷入rom
 
-Data不解密
-Mtp无法挂载data
+目前bug:
 
-亮度，振动等bug
+Data不解密
+振动bug
