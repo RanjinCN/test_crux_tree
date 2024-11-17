@@ -26,6 +26,7 @@
 #
 
 import /init.recovery.qcom_decrypt.rc
+import /init.recovery.qcom_decrypt.fbe.rc
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
